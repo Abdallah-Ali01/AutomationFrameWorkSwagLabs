@@ -27,7 +27,8 @@ public class Main {
         testng.addListener(tla);
         testng.run();
         try {
-            File reportFile = new File("C:\\Users\\TAKO\\Desktop\\New folder (4)\\test-output\\Command line suite\\Command line test.html");
+            //project file path in my computer to open report after test
+            File reportFile = new File("C:\\Users\\TAKO\\Desktop\\SeleniumTestNG_EXE_Project\\src\\test-output\\Command line suite\\Command line test.html");
             if (reportFile.exists()) {
                 Desktop.getDesktop().browse(reportFile.toURI());
             } else {
