@@ -1,14 +1,12 @@
+package com.demo.seleniumTestNG;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,19 +24,13 @@ public class ProductsTest {
         prefs.put("credentials_enable_service", false);
 
         options.setExperimentalOption("prefs", prefs);
-
-
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\TAKO\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-
         auto = new ChromeDriver(options);
-
         auto.manage().window().maximize();
         auto.get("https://www.saucedemo.com");
 
         auto.findElement(By.id("user-name")).sendKeys("standard_user");
         auto.findElement(By.id("password")).sendKeys("secret_sauce");
         auto.findElement(By.id("login-button")).click();
-        // انتظر تحميل الصفحة يدويًا
         Thread.sleep(2000);
     }
     @AfterMethod

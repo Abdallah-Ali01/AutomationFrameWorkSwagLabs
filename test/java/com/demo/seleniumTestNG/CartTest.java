@@ -1,3 +1,4 @@
+package com.demo.seleniumTestNG;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeOptions;

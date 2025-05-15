@@ -1,3 +1,5 @@
+package com.demo.seleniumTestNG;
+
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
