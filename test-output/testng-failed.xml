@@ -3,51 +3,33 @@
 <suite name="Failed suite [Command line suite]">
   <test thread-count="5" name="Command line test(failed)">
     <classes>
-      <class name="com.demo.seleniumTestNG.LoginTest">
+      <class name="LoginTest">
         <methods>
-          <include name="validLogin"/>
-        </methods>
-      </class> <!-- com.demo.seleniumTestNG.LoginTest -->
-      <class name="com.demo.seleniumTestNG.CheckoutTest">
-        <methods>
-          <include name="testCheckoutProcessProblemUser"/>
-          <include name="testCheckoutWithNumericName"/>
-          <include name="testCheckoutWithEmptyFirstName"/>
-          <include name="testContinueWithoutCartItems"/>
-          <include name="testValidCheckout"/>
-          <include name="testCheckoutProcessErrorUser"/>
           <include name="setup"/>
-          <include name="testCheckoutWithNonNumericPostalCode"/>
+          <include name="lockedUserLogin"/>
           <include name="tearDown"/>
+        </methods>
+      </class> <!-- LoginTest -->
+      <class name="CheckoutTest">
+        <methods>
+          <include name="testCheckoutWithNumericName"/>
+          <include name="testCheckoutProcessProblemUser"/>
+          <include name="testCheckoutWithNonNumericPostalCode"/>
+          <include name="setup"/>
+          <include name="testContinueWithoutCartItems"/>
           <include name="testCheckoutWithZeroPostalCode"/>
+          <include name="tearDown"/>
+          <include name="testCheckoutProcessErrorUser"/>
         </methods>
-      </class> <!-- com.demo.seleniumTestNG.CheckoutTest -->
-      <class name="com.demo.seleniumTestNG.CartTest">
+      </class> <!-- CheckoutTest -->
+      <class name="CartTest">
         <methods>
-          <include name="cartPersistsAfterRefresh"/>
-          <include name="checkoutDisabledWhenCartEmpty"/>
           <include name="close"/>
-          <include name="cartDisplaysCorrectItemDetails"/>
-          <include name="testAddAndRemoveAllItems"/>
+          <include name="checkoutDisabledWhenCartEmpty"/>
           <include name="setup"/>
-          <include name="checkCheckoutButton"/>
           <include name="checkEmptyCartBehavior"/>
-          <include name="checkRemoveItemFromCart"/>
-          <include name="checkItemInCart"/>
-          <include name="checkContinueShoppingButton"/>
         </methods>
-      </class> <!-- com.demo.seleniumTestNG.CartTest -->
-      <class name="com.demo.seleniumTestNG.ProductsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="Add2ProductsToCart"/>
-          <include name="remove"/>
-          <include name="teardown"/>
-          <include name="testLogout"/>
-          <include name="chooseFromTheFilter"/>
-          <include name="AddToCart"/>
-        </methods>
-      </class> <!-- com.demo.seleniumTestNG.ProductsTest -->
+      </class> <!-- CartTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

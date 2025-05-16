@@ -1,11 +1,8 @@
-package com.demo.seleniumTestNG;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.*;
 import org.testng.annotations.*;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,7 +13,6 @@ public class CheckoutTest {
 
     @BeforeMethod
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\TAKO\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
 
         // إطفاء تحذيرات Chrome الخاصة بكلمات السر
@@ -56,86 +52,97 @@ public class CheckoutTest {
         auto.findElement(By.id("continue")).click();
     }
 
-    @Test
+    @Test(priority = 0)
     public void testValidCheckout() throws InterruptedException {
         login("standard_user");
         addItemToCart();
         fillCheckoutForm("Abdallah", "Ali", "12345");
-        Thread.sleep(2000);
+        Thread.sleep(500);
         auto.findElement(By.id("finish")).click();
 
         WebElement confirmation = auto.findElement(By.className("complete-header"));
         Assert.assertEquals(confirmation.getText(), "Thank you for your order!", "Order confirmation failed");
     }
 
-    @Test
+    @Test(priority = 4)
     public void testCheckoutWithEmptyFirstName() {
         login("standard_user");
         addItemToCart();
         fillCheckoutForm("", "Ali", "12345");
 
         WebElement titleElement = auto.findElement(By.className("title"));
-        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information");
+        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information","Shouldn't redirect to Checkout : Overview");
     }
 
-    @Test
+    @Test(priority = 5)
+    public void testCheckoutWithSpacesInFields() {
+        login("standard_user");
+        addItemToCart();
+        fillCheckoutForm(" ", " ", " ");
+
+        WebElement titleElement = auto.findElement(By.className("title"));
+        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information","Accept Spaces Error: Shouldn't redirect to Checkout : Overview");
+    }
+
+    @Test(priority = 6)
     public void testCheckoutWithNumericName() {
         login("standard_user");
         addItemToCart();
         fillCheckoutForm("123", "456", "78910");
 
         WebElement titleElement = auto.findElement(By.className("title"));
-        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information");
+        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information","Shouldn't redirect to Checkout : Overview");
     }
 
-    @Test
+    @Test(priority = 7)
     public void testCheckoutWithZeroPostalCode() {
         login("standard_user");
         addItemToCart();
         fillCheckoutForm("Abdallah", "Ali", "0");
 
         WebElement titleElement = auto.findElement(By.className("title"));
-        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information");
+        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information","Shouldn't redirect to Checkout : Overview");
     }
 
-    @Test
+    @Test(priority = 8)
     public void testCheckoutWithNonNumericPostalCode() {
         login("standard_user");
         addItemToCart();
         fillCheckoutForm("Abdallah", "Ali", "abcde");
 
         WebElement titleElement = auto.findElement(By.className("title"));
-        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information");
+        Assert.assertEquals(titleElement.getText(), "Checkout: Your Information","Shouldn't redirect to Checkout : Overview");
     }
 
-    @Test
+    @Test (priority = 3)
     public void testContinueWithoutCartItems() {
         login("standard_user");
         auto.findElement(By.className("shopping_cart_link")).click();
         Assert.assertTrue(auto.findElements(By.id("checkout")).isEmpty(), "Checkout button should not be present if cart is empty");
     }
 
-    @Test
+    @Test(priority = 1)
     public void testCheckoutProcessProblemUser() {
         login("problem_user");
         addItemToCart();
-        fillCheckoutForm("Abdallah", "Ali", "123");
+
 
         try {
+            fillCheckoutForm("Abdallah", "Ali", "123");
             auto.findElement(By.id("finish")).click();
             WebElement confirmation = auto.findElement(By.className("complete-header"));
             Assert.assertEquals(confirmation.getText(), "Thank you for your order!", "Order confirmation failed for problem_user");
         } catch (Exception e) {
-            Assert.fail("Checkout process failed for problem_user: " + e.getMessage());
+            Assert.fail("Checkout process failed for problem_user");
         }
     }
 
-    @Test
+    @Test(priority = 2)
     public void testCheckoutProcessErrorUser() {
         login("error_user");
         addItemToCart();
-        fillCheckoutForm("Abdallah", "Ali", "123");
         try {
+            fillCheckoutForm("Abdallah", "Ali", "123");
             auto.findElement(By.id("finish")).click();
             WebElement confirmation = auto.findElement(By.className("complete-header"));
             Assert.assertEquals(confirmation.getText(), "Thank you for your order!", "Order confirmation failed for problem_user");
@@ -145,15 +152,3 @@ public class CheckoutTest {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

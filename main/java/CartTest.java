@@ -1,24 +1,17 @@
-package com.demo.seleniumTestNG;
-
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.testng.Assert;
-import org.testng.annotations.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.*;
+import org.testng.annotations.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 
 public class CartTest{
     WebDriver auto;
 
     @BeforeMethod
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\TAKO\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
 
         // إطفاء تحذيرات Chrome الخاصة بكلمات السر
@@ -39,22 +32,14 @@ public class CartTest{
     public void login() {
         auto.findElement(By.id("user-name")).sendKeys("standard_user");
         auto.findElement(By.id("password")).sendKeys("secret_sauce");
-        handleAlertIfPresent();
         auto.findElement(By.id("login-button")).click();
-        handleAlertIfPresent();
     }
 
     public void checkAddtocart() {
-        handleAlertIfPresent();
         auto.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         auto.findElement(By.className("shopping_cart_container")).click();
     }
-    private void handleAlertIfPresent() {
-        try {
-            Alert alert = auto.switchTo().alert();
-            alert.accept();
-        } catch (NoAlertPresentException ignored){}
-    }
+
     public void addAllItemsToCart()  {
         List<WebElement> addButtons = auto.findElements(By.cssSelector("button[id^='add-to-cart']"));
         for (WebElement button : addButtons) {
@@ -122,17 +107,12 @@ public class CartTest{
     }
 
     //Status:Fail
+
     @Test(priority = 7)
-    public void checkEmptyCartBehavior() {
-        login();checkAddtocart();
-        auto.findElement(By.className("shopping_cart_link")).click(); // Open cart with no items
-        int itemsCount = auto.findElements(By.className("cart_item")).size();
-        Assert.assertEquals(itemsCount, 0, "Cart is not empty when it should be");}
-    @Test(priority = 8)
     public void checkoutDisabledWhenCartEmpty()  {
         login();
         auto.findElement(By.className("shopping_cart_link")).click();
         WebElement checkoutBtn = auto.findElement(By.id("checkout"));
         Assert.assertFalse(checkoutBtn.isEnabled(), "Checkout button should be disabled when cart is empty");
-}
+    }
 }

@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +20,11 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">23 methods, 1 failed,  22 skipped,  </span>
+                    <span class="method-stats">29 methods, 9 failed,   20 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,129 +102,159 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.LoginTest" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="checkEmptyCartBehavior">checkEmptyCartBehavior</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="checkoutDisabledWhenCartEmpty">checkoutDisabledWhenCartEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="lockedUserLogin">lockedUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutProcessErrorUser">testCheckoutProcessErrorUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutProcessProblemUser">testCheckoutProcessProblemUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithNonNumericPostalCode">testCheckoutWithNonNumericPostalCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithNumericName">testCheckoutWithNumericName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithZeroPostalCode">testCheckoutWithZeroPostalCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testContinueWithoutCartItems">testContinueWithoutCartItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Command_line_suite">
+                    <div class="method-list-content passed suite-Command_line_suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.ProductsTest" class="method navigator-link" hash-for-method="Add2ProductsToCart">Add2ProductsToCart</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ProductsTest" class="method navigator-link" hash-for-method="Add2ProductsToCart">Add2ProductsToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.ProductsTest" class="method navigator-link" hash-for-method="AddToCart">AddToCart</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ProductsTest" class="method navigator-link" hash-for-method="AddToCart">AddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="cartDisplaysCorrectItemDetails">cartDisplaysCorrectItemDetails</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="blankLogin">blankLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="cartPersistsAfterRefresh">cartPersistsAfterRefresh</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="blankPasswordLogin">blankPasswordLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="checkCheckoutButton">checkCheckoutButton</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="blankUserNameLogin">blankUserNameLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="checkContinueShoppingButton">checkContinueShoppingButton</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="cartDisplaysCorrectItemDetails">cartDisplaysCorrectItemDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="checkEmptyCartBehavior">checkEmptyCartBehavior</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="cartPersistsAfterRefresh">cartPersistsAfterRefresh</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="checkItemInCart">checkItemInCart</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="checkCheckoutButton">checkCheckoutButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="checkRemoveItemFromCart">checkRemoveItemFromCart</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="checkContinueShoppingButton">checkContinueShoppingButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="checkoutDisabledWhenCartEmpty">checkoutDisabledWhenCartEmpty</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="checkItemInCart">checkItemInCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.ProductsTest" class="method navigator-link" hash-for-method="chooseFromTheFilter">chooseFromTheFilter</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="checkRemoveItemFromCart">checkRemoveItemFromCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.ProductsTest" class="method navigator-link" hash-for-method="remove">remove</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ProductsTest" class="method navigator-link" hash-for-method="chooseFromTheFilter">chooseFromTheFilter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CartTest" class="method navigator-link" hash-for-method="testAddAndRemoveAllItems">testAddAndRemoveAllItems</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="invalidLoginPassword">invalidLoginPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutProcessErrorUser">testCheckoutProcessErrorUser</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="invalidLoginUser">invalidLoginUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutProcessProblemUser">testCheckoutProcessProblemUser</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ProductsTest" class="method navigator-link" hash-for-method="remove">remove</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithEmptyFirstName">testCheckoutWithEmptyFirstName</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CartTest" class="method navigator-link" hash-for-method="testAddAndRemoveAllItems">testAddAndRemoveAllItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithNonNumericPostalCode">testCheckoutWithNonNumericPostalCode</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithEmptyFirstName">testCheckoutWithEmptyFirstName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithNumericName">testCheckoutWithNumericName</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ProductsTest" class="method navigator-link" hash-for-method="testLogout">testLogout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testCheckoutWithZeroPostalCode">testCheckoutWithZeroPostalCode</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="CheckoutTest" class="method navigator-link" hash-for-method="testValidCheckout">testValidCheckout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testContinueWithoutCartItems">testContinueWithoutCartItems</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="LoginTest" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.ProductsTest" class="method navigator-link" hash-for-method="testLogout">testLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.demo.seleniumTestNG.CheckoutTest" class="method navigator-link" hash-for-method="testValidCheckout">testValidCheckout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -240,42 +269,28 @@
           <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.demo.seleniumTestNG.LoginTest</span>
+              <span class="class-name">LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validLogin">
-                  </a> <!-- validLogin -->
-                  <span class="method-name">validLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.LoginTest.validLogin(com.demo.seleniumTestNG.LoginTest.java:10)
+                  <a name="lockedUserLogin">
+                  </a> <!-- lockedUserLogin -->
+                  <span class="method-name">lockedUserLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: User Should Login expected [true] but found [false]
+	at LoginTest.lockedUserLogin(LoginTest.java:73)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 30 more
-... Removed 22 stack frames
+	at Main.main(Main.java:19)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-skipped">
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.demo.seleniumTestNG.CheckoutTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">CheckoutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -283,25 +298,19 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testCheckoutProcessErrorUser">
                   </a> <!-- testCheckoutProcessErrorUser -->
                   <span class="method-name">testCheckoutProcessErrorUser</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+                  <div class="stack-trace">java.lang.AssertionError: Checkout process failed for problem_user: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.complete\-header&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d67087e4e352b91d8fa6da6e13f03213, findElement {using=class name, value=complete-header}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\TAKO\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56304}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56304/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d67087e4e352b91d8fa6da6e13f03213
+	at CheckoutTest.testCheckoutProcessErrorUser(CheckoutTest.java:139)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -310,52 +319,19 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testCheckoutProcessProblemUser">
                   </a> <!-- testCheckoutProcessProblemUser -->
                   <span class="method-name">testCheckoutProcessProblemUser</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+                  <div class="stack-trace">java.lang.AssertionError: Checkout process failed for problem_user: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#finish&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c39343a82523cee4eba758ff26081ec3, findElement {using=id, value=finish}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\TAKO\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56272}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56272/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c39343a82523cee4eba758ff26081ec3
+	at CheckoutTest.testCheckoutProcessProblemUser(CheckoutTest.java:125)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCheckoutWithEmptyFirstName">
-                  </a> <!-- testCheckoutWithEmptyFirstName -->
-                  <span class="method-name">testCheckoutWithEmptyFirstName</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -364,25 +340,11 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testCheckoutWithNonNumericPostalCode">
                   </a> <!-- testCheckoutWithNonNumericPostalCode -->
                   <span class="method-name">testCheckoutWithNonNumericPostalCode</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Checkout: Your Information] but found [Checkout: Overview]
+	at CheckoutTest.testCheckoutWithNonNumericPostalCode(CheckoutTest.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -391,25 +353,11 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testCheckoutWithNumericName">
                   </a> <!-- testCheckoutWithNumericName -->
                   <span class="method-name">testCheckoutWithNumericName</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Checkout: Your Information] but found [Checkout: Overview]
+	at CheckoutTest.testCheckoutWithNumericName(CheckoutTest.java:84)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -418,25 +366,11 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testCheckoutWithZeroPostalCode">
                   </a> <!-- testCheckoutWithZeroPostalCode -->
                   <span class="method-name">testCheckoutWithZeroPostalCode</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Checkout: Your Information] but found [Checkout: Overview]
+	at CheckoutTest.testCheckoutWithZeroPostalCode(CheckoutTest.java:94)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -445,248 +379,31 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testContinueWithoutCartItems">
                   </a> <!-- testContinueWithoutCartItems -->
                   <span class="method-name">testContinueWithoutCartItems</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
+                  <div class="stack-trace">java.lang.AssertionError: Checkout button should not be present if cart is empty expected [true] but found [false]
+	at CheckoutTest.testContinueWithoutCartItems(CheckoutTest.java:111)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidCheckout">
-                  </a> <!-- testValidCheckout -->
-                  <span class="method-name">testValidCheckout</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CheckoutTest.setup(com.demo.seleniumTestNG.CheckoutTest.java:17)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.demo.seleniumTestNG.CartTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">CartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="cartDisplaysCorrectItemDetails">
-                  </a> <!-- cartDisplaysCorrectItemDetails -->
-                  <span class="method-name">cartDisplaysCorrectItemDetails</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="cartPersistsAfterRefresh">
-                  </a> <!-- cartPersistsAfterRefresh -->
-                  <span class="method-name">cartPersistsAfterRefresh</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkCheckoutButton">
-                  </a> <!-- checkCheckoutButton -->
-                  <span class="method-name">checkCheckoutButton</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkContinueShoppingButton">
-                  </a> <!-- checkContinueShoppingButton -->
-                  <span class="method-name">checkContinueShoppingButton</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="checkEmptyCartBehavior">
                   </a> <!-- checkEmptyCartBehavior -->
                   <span class="method-name">checkEmptyCartBehavior</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
+                  <div class="stack-trace">java.lang.AssertionError: Cart is not empty when it should be expected [0] but found [1]
+	at CartTest.checkEmptyCartBehavior(CartTest.java:123)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkItemInCart">
-                  </a> <!-- checkItemInCart -->
-                  <span class="method-name">checkItemInCart</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkRemoveItemFromCart">
-                  </a> <!-- checkRemoveItemFromCart -->
-                  <span class="method-name">checkRemoveItemFromCart</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
+	at Main.main(Main.java:19)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -696,61 +413,20 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="checkoutDisabledWhenCartEmpty">
                   </a> <!-- checkoutDisabledWhenCartEmpty -->
                   <span class="method-name">checkoutDisabledWhenCartEmpty</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
+                  <div class="stack-trace">java.lang.AssertionError: Checkout button should be disabled when cart is empty expected [false] but found [true]
+	at CartTest.checkoutDisabledWhenCartEmpty(CartTest.java:129)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAddAndRemoveAllItems">
-                  </a> <!-- testAddAndRemoveAllItems -->
-                  <span class="method-name">testAddAndRemoveAllItems</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:51)
-	at com.demo.seleniumTestNG.CartTest.setup(com.demo.seleniumTestNG.CartTest.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
+	at Main.main(Main.java:19)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
-          <div class="suite-Command_line_suite-class-skipped">
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.demo.seleniumTestNG.ProductsTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">ProductsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -758,26 +434,6 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="Add2ProductsToCart">
                   </a> <!-- Add2ProductsToCart -->
                   <span class="method-name">Add2ProductsToCart</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
-	at com.demo.seleniumTestNG.ProductsTest.setup(com.demo.seleniumTestNG.ProductsTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -785,26 +441,6 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="AddToCart">
                   </a> <!-- AddToCart -->
                   <span class="method-name">AddToCart</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
-	at com.demo.seleniumTestNG.ProductsTest.setup(com.demo.seleniumTestNG.ProductsTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -812,26 +448,6 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="chooseFromTheFilter">
                   </a> <!-- chooseFromTheFilter -->
                   <span class="method-name">chooseFromTheFilter</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
-	at com.demo.seleniumTestNG.ProductsTest.setup(com.demo.seleniumTestNG.ProductsTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -839,26 +455,6 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="remove">
                   </a> <!-- remove -->
                   <span class="method-name">remove</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
-	at com.demo.seleniumTestNG.ProductsTest.setup(com.demo.seleniumTestNG.ProductsTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -866,30 +462,139 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
                   <a name="testLogout">
                   </a> <!-- testLogout -->
                   <span class="method-name">testLogout</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: &apos;4.31.0&apos;, revision: &apos;4ae8fc9f8a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:121)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
-	at com.demo.seleniumTestNG.ProductsTest.setup(com.demo.seleniumTestNG.ProductsTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at Main.main(Main.java:24)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedriver.exe
-	at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:475)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:118)
-	... 34 more
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-skipped -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankLogin">
+                  </a> <!-- blankLogin -->
+                  <span class="method-name">blankLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankPasswordLogin">
+                  </a> <!-- blankPasswordLogin -->
+                  <span class="method-name">blankPasswordLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="blankUserNameLogin">
+                  </a> <!-- blankUserNameLogin -->
+                  <span class="method-name">blankUserNameLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginPassword">
+                  </a> <!-- invalidLoginPassword -->
+                  <span class="method-name">invalidLoginPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginUser">
+                  </a> <!-- invalidLoginUser -->
+                  <span class="method-name">invalidLoginUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckoutWithEmptyFirstName">
+                  </a> <!-- testCheckoutWithEmptyFirstName -->
+                  <span class="method-name">testCheckoutWithEmptyFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidCheckout">
+                  </a> <!-- testValidCheckout -->
+                  <span class="method-name">testValidCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartDisplaysCorrectItemDetails">
+                  </a> <!-- cartDisplaysCorrectItemDetails -->
+                  <span class="method-name">cartDisplaysCorrectItemDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartPersistsAfterRefresh">
+                  </a> <!-- cartPersistsAfterRefresh -->
+                  <span class="method-name">cartPersistsAfterRefresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCheckoutButton">
+                  </a> <!-- checkCheckoutButton -->
+                  <span class="method-name">checkCheckoutButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContinueShoppingButton">
+                  </a> <!-- checkContinueShoppingButton -->
+                  <span class="method-name">checkContinueShoppingButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkItemInCart">
+                  </a> <!-- checkItemInCart -->
+                  <span class="method-name">checkItemInCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkRemoveItemFromCart">
+                  </a> <!-- checkRemoveItemFromCart -->
+                  <span class="method-name">checkRemoveItemFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAndRemoveAllItems">
+                  </a> <!-- testAddAndRemoveAllItems -->
+                  <span class="method-name">testAddAndRemoveAllItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -901,10 +606,10 @@ Caused by: java.lang.IllegalStateException: chromedriver must exist: chromedrive
 &lt;suite name=&quot;Command line suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demo.seleniumTestNG.LoginTest&quot;/&gt;
-      &lt;class name=&quot;com.demo.seleniumTestNG.ProductsTest&quot;/&gt;
-      &lt;class name=&quot;com.demo.seleniumTestNG.CartTest&quot;/&gt;
-      &lt;class name=&quot;com.demo.seleniumTestNG.CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;LoginTest&quot;/&gt;
+      &lt;class name=&quot;ProductsTest&quot;/&gt;
+      &lt;class name=&quot;CartTest&quot;/&gt;
+      &lt;class name=&quot;CheckoutTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -944,104 +649,128 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(23);
+data.addRows(29);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLogin')
-data.setCell(0, 2, 'com.demo.seleniumTestNG.LoginTest')
-data.setCell(0, 3, 61);
+data.setCell(0, 1, 'testValidCheckout')
+data.setCell(0, 2, 'CheckoutTest')
+data.setCell(0, 3, 2791);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkEmptyCartBehavior')
-data.setCell(1, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'testLogout')
+data.setCell(1, 2, 'ProductsTest')
+data.setCell(1, 3, 2658);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCheckoutWithZeroPostalCode')
-data.setCell(2, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'testAddAndRemoveAllItems')
+data.setCell(2, 2, 'CartTest')
+data.setCell(2, 3, 917);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkCheckoutButton')
-data.setCell(3, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'cartPersistsAfterRefresh')
+data.setCell(3, 2, 'CartTest')
+data.setCell(3, 3, 887);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCheckoutWithEmptyFirstName')
-data.setCell(4, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'testCheckoutProcessErrorUser')
+data.setCell(4, 2, 'CheckoutTest')
+data.setCell(4, 3, 760);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testAddAndRemoveAllItems')
-data.setCell(5, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'testCheckoutWithZeroPostalCode')
+data.setCell(5, 2, 'CheckoutTest')
+data.setCell(5, 3, 725);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCheckoutProcessProblemUser')
-data.setCell(6, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'testCheckoutWithNonNumericPostalCode')
+data.setCell(6, 2, 'CheckoutTest')
+data.setCell(6, 3, 719);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'cartDisplaysCorrectItemDetails')
-data.setCell(7, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'testCheckoutWithNumericName')
+data.setCell(7, 2, 'CheckoutTest')
+data.setCell(7, 3, 710);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testCheckoutProcessErrorUser')
-data.setCell(8, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'testCheckoutWithEmptyFirstName')
+data.setCell(8, 2, 'CheckoutTest')
+data.setCell(8, 3, 705);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testValidCheckout')
-data.setCell(9, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'testCheckoutProcessProblemUser')
+data.setCell(9, 2, 'CheckoutTest')
+data.setCell(9, 3, 700);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Add2ProductsToCart')
-data.setCell(10, 2, 'com.demo.seleniumTestNG.ProductsTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'checkContinueShoppingButton')
+data.setCell(10, 2, 'CartTest')
+data.setCell(10, 3, 503);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testContinueWithoutCartItems')
-data.setCell(11, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'checkRemoveItemFromCart')
+data.setCell(11, 2, 'CartTest')
+data.setCell(11, 3, 493);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'checkContinueShoppingButton')
-data.setCell(12, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(12, 3, 0);
+data.setCell(12, 1, 'checkEmptyCartBehavior')
+data.setCell(12, 2, 'CartTest')
+data.setCell(12, 3, 484);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'cartPersistsAfterRefresh')
-data.setCell(13, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'checkCheckoutButton')
+data.setCell(13, 2, 'CartTest')
+data.setCell(13, 3, 463);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'chooseFromTheFilter')
-data.setCell(14, 2, 'com.demo.seleniumTestNG.ProductsTest')
-data.setCell(14, 3, 0);
+data.setCell(14, 1, 'checkItemInCart')
+data.setCell(14, 2, 'CartTest')
+data.setCell(14, 3, 449);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testCheckoutWithNumericName')
-data.setCell(15, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'cartDisplaysCorrectItemDetails')
+data.setCell(15, 2, 'CartTest')
+data.setCell(15, 3, 440);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'AddToCart')
-data.setCell(16, 2, 'com.demo.seleniumTestNG.ProductsTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'checkoutDisabledWhenCartEmpty')
+data.setCell(16, 2, 'CartTest')
+data.setCell(16, 3, 360);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testCheckoutWithNonNumericPostalCode')
-data.setCell(17, 2, 'com.demo.seleniumTestNG.CheckoutTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'testContinueWithoutCartItems')
+data.setCell(17, 2, 'CheckoutTest')
+data.setCell(17, 3, 345);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'remove')
-data.setCell(18, 2, 'com.demo.seleniumTestNG.ProductsTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 1, 'validLogin')
+data.setCell(18, 2, 'LoginTest')
+data.setCell(18, 3, 273);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'checkRemoveItemFromCart')
-data.setCell(19, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(19, 3, 0);
+data.setCell(19, 1, 'invalidLoginPassword')
+data.setCell(19, 2, 'LoginTest')
+data.setCell(19, 3, 248);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'checkItemInCart')
-data.setCell(20, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(20, 3, 0);
+data.setCell(20, 1, 'lockedUserLogin')
+data.setCell(20, 2, 'LoginTest')
+data.setCell(20, 3, 248);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testLogout')
-data.setCell(21, 2, 'com.demo.seleniumTestNG.ProductsTest')
-data.setCell(21, 3, 0);
+data.setCell(21, 1, 'invalidLoginUser')
+data.setCell(21, 2, 'LoginTest')
+data.setCell(21, 3, 243);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'checkoutDisabledWhenCartEmpty')
-data.setCell(22, 2, 'com.demo.seleniumTestNG.CartTest')
-data.setCell(22, 3, 0);
+data.setCell(22, 1, 'blankPasswordLogin')
+data.setCell(22, 2, 'LoginTest')
+data.setCell(22, 3, 173);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'blankUserNameLogin')
+data.setCell(23, 2, 'LoginTest')
+data.setCell(23, 3, 155);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Add2ProductsToCart')
+data.setCell(24, 2, 'ProductsTest')
+data.setCell(24, 3, 139);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'remove')
+data.setCell(25, 2, 'ProductsTest')
+data.setCell(25, 3, 121);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'chooseFromTheFilter')
+data.setCell(26, 2, 'ProductsTest')
+data.setCell(26, 3, 95);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'blankLogin')
+data.setCell(27, 2, 'LoginTest')
+data.setCell(27, 3, 85);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'AddToCart')
+data.setCell(28, 2, 'ProductsTest')
+data.setCell(28, 3, 65);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 62 ms</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -1067,120 +796,385 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.seleniumTestNG.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">2784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3244 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validLogin</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">lockedUserLogin</span>
+                <span class="method-start">6051 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6300 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginUser</span>
+                <span class="method-start">8920 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9163 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">9302 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginPassword</span>
+                <span class="method-start">14228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">14477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">14609 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">blankLogin</span>
+                <span class="method-start">16781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17016 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">blankUserNameLogin</span>
+                <span class="method-start">19610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">blankPasswordLogin</span>
+                <span class="method-start">22619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22792 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.seleniumTestNG.ProductsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup</span>
-                <span class="method-start">66 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">ProductsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">77 ms</span>
+                <span class="method-start">22943 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Add2ProductsToCart</span>
+                <span class="method-start">25810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">25949 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">79 ms</span>
+                <span class="method-start">26102 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddToCart</span>
+                <span class="method-start">29014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">29079 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">80 ms</span>
+                <span class="method-start">29239 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">chooseFromTheFilter</span>
+                <span class="method-start">32043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">32139 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-start">32280 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">remove</span>
+                <span class="method-start">34934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">35055 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">35218 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogout</span>
+                <span class="method-start">38056 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">40715 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.seleniumTestNG.CartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">40863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAndRemoveAllItems</span>
+                <span class="method-start">42924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">43841 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">43996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkContinueShoppingButton</span>
+                <span class="method-start">46511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">47014 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">47172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCheckoutButton</span>
+                <span class="method-start">49634 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">50097 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">50245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkItemInCart</span>
+                <span class="method-start">52700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">53150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">53312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkRemoveItemFromCart</span>
+                <span class="method-start">55860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">56354 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">56516 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cartPersistsAfterRefresh</span>
+                <span class="method-start">58890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">59777 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">59931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cartDisplaysCorrectItemDetails</span>
+                <span class="method-start">62223 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">62663 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setup</span>
-                <span class="method-start">84 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-name">checkEmptyCartBehavior</span>
+                <span class="method-start">65145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">65630 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">87 ms</span>
+                <span class="method-start">65797 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">89 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">90 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">92 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">93 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">95 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">96 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">97 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkoutDisabledWhenCartEmpty</span>
+                <span class="method-start">68200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">close</span>
+                <span class="method-start">68560 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.seleniumTestNG.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CheckoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">68704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidCheckout</span>
+                <span class="method-start">72398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">75342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">setup</span>
-                <span class="method-start">99 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-name">testCheckoutProcessProblemUser</span>
+                <span class="method-start">79250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">79950 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">102 ms</span>
+                <span class="method-start">80108 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheckoutProcessErrorUser</span>
+                <span class="method-start">82766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">83527 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">103 ms</span>
+                <span class="method-start">83662 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testContinueWithoutCartItems</span>
+                <span class="method-start">86252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86597 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">105 ms</span>
+                <span class="method-start">86747 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCheckoutWithEmptyFirstName</span>
+                <span class="method-start">89454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90159 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">106 ms</span>
+                <span class="method-start">90314 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheckoutWithNumericName</span>
+                <span class="method-start">92550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">93260 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">93415 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheckoutWithZeroPostalCode</span>
+                <span class="method-start">96137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">96862 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">109 ms</span>
+                <span class="method-start">97017 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">110 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheckoutWithNonNumericPostalCode</span>
+                <span class="method-start">99249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99968 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>
