@@ -13,7 +13,8 @@ public class Main {
             LoginTest.class,
             ProductsTest.class,
             CartTest.class,
-            CheckoutTest.class
+            CheckoutTest.class,
+            EndToEndTest.class
         }
         );
         testng.run();
