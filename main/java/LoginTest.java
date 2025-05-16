@@ -46,24 +46,24 @@ public class LoginTest {
         auto.findElement(By.id("user-name")).sendKeys("standard_user");
         auto.findElement(By.id("password")).sendKeys("invalid_password");
         auto.findElement(By.id("login-button")).click();
-        Assert.assertTrue(!auto.getCurrentUrl().contains("inventory"));
+        Assert.assertFalse(auto.getCurrentUrl().contains("inventory"));
     }
     @Test(priority = 4)
     public void blankLogin() {
         auto.findElement(By.id("login-button")).click();
-        Assert.assertTrue(!auto.getCurrentUrl().contains("inventory"));
+        Assert.assertFalse(auto.getCurrentUrl().contains("inventory"));
     }
     @Test(priority = 5)
     public void blankUserNameLogin() {
         auto.findElement(By.id("password")).sendKeys("secret_sauce");
         auto.findElement(By.id("login-button")).click();
-        Assert.assertTrue(!auto.getCurrentUrl().contains("inventory"));
+        Assert.assertFalse(auto.getCurrentUrl().contains("inventory"));
     }
     @Test(priority = 6)
     public void blankPasswordLogin() {
         auto.findElement(By.id("user-name")).sendKeys("standard_user");
         auto.findElement(By.id("login-button")).click();
-        Assert.assertTrue(!auto.getCurrentUrl().contains("inventory"));
+        Assert.assertFalse(auto.getCurrentUrl().contains("inventory"));
     }
     @Test(priority = 1)
     public void lockedUserLogin(){
